@@ -34,7 +34,7 @@ class TimeSeriesWrapper extends Component<
             data: undefined,
         };
 
-        fetch('http://127.0.0.1:3001/timeseries/allcompanies', {
+        fetch('http://diascld32.iccluster.epfl.ch:3001/timeseries/allcompanies', {
             method: 'GET',
         })
             .then(jsonResponse => {
@@ -48,7 +48,7 @@ class TimeSeriesWrapper extends Component<
 
     private constructTimeSeries = memoize(
         (activeCompanies: TSeriesParametersState['activeCompanies']) => {
-            fetch('http://127.0.0.1:3001/timeseries', {
+            fetch('http://diascld32.iccluster.epfl.ch:3001/timeseries', {
                 body: JSON.stringify({
                     activeCompanies,
                 }),

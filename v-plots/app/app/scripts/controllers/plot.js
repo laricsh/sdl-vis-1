@@ -390,7 +390,7 @@ angular.module('codeApp')
 
     /** Communication with the backend to get data from the database */
     async function getDatafromDB(data) {
-      const response = await fetch('http://127.0.0.1:3001/table', {
+      const response = await fetch('http://diascld32.iccluster.epfl.ch:3001/table', {
         method: 'POST',
         mode: 'cors',
         credentials: 'same-origin',
@@ -407,7 +407,7 @@ angular.module('codeApp')
      * Columns from tables are selectable as datasource.
      */
     async function getTablesfromDB() {
-      const response = await fetch('http://127.0.0.1:3001/schema', {
+      const response = await fetch('http://diascld32.iccluster.epfl.ch:3001/schema', {
         method: 'POST',
         mode: 'cors',
         credentials: 'same-origin',

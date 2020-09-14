@@ -36,7 +36,7 @@ export interface VaryingSimilarityGraphs {
 }
 
 const endpoint = '/simsearch';
-const host = 'http://127.0.0.1:3001';
+const host = 'http://diascld32.iccluster.epfl.ch:3001';
 const userAgent = 'frontend';
 const client = new RestClient(userAgent, host);
 

@@ -25,7 +25,7 @@ class GraphQueryWrapper extends React.Component<
     // Set the output activations when new entityResolutionThreshold is received as props
     private constructGraph = memoize(
         (entityResolutionThreshold: number, maxHierarchyDepth: number) => {
-            fetch('http://127.0.0.1:3001/graph', {
+            fetch('http://diascld32.iccluster.epfl.ch:3001/graph', {
                 body: JSON.stringify({
                     entity_resolution_threshold: entityResolutionThreshold,
                     max_hierarchy_depth: maxHierarchyDepth,
